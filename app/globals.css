@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f3eee4;
+  --foreground: #102033;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: #081018;
+  --color-navy: #102033;
+  --color-paper: #f3eee4;
+  --color-sand: #e7dfd0;
+  --color-brass: #c9a36a;
+  --color-teal: #2a9d8f;
+  --color-foam: #d7efe9;
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), "Noto Sans TC", sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), "Noto Serif TC", serif;
+}
+
+.bg-white\/8 {
+  background: rgb(255 255 255 / 0.08);
+}
